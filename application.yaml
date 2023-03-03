@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application
-  namespace: argocd
+  name: acme-fitness-application
+  namespace: acme-fitness
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/Jocasmen94/argocd-test.git
+    repoURL: https://github.com/Jocasmen94/acme-fitness.git
     targetRevision: HEAD
     path: kubernetes-manifests
   destination: 
