@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: acme-fitness-application
-  namespace: acme-fitness
+  namespace:  argocd
 spec:
   project: default
 
